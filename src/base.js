@@ -3,14 +3,14 @@ import 'firebase/database';
 import "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD_XdkFV840JHmTcpRIEDxizxff1lENjeg",
-  authDomain: "catch-of-the-day-venish.firebaseapp.com",
-  databaseURL: "https://catch-of-the-day-venish.firebaseio.com",
-  projectId: "catch-of-the-day-venish",
-  storageBucket: "catch-of-the-day-venish.appspot.com",
-  messagingSenderId: "427521997084",
-  appId: "1:427521997084:web:8745b446746c15e137e2d9",
-  measurementId: "G-DN3LTCE95C"
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  databaseURL: process.env.DATABASE_URL,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID
 };
 
 firebase.initializeApp(firebaseConfig);
